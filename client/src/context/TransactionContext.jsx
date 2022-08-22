@@ -9,19 +9,20 @@ const {ethereum } = window;
 const getEtheruemContract = ()=> {
     const provider = new ethers.providers.Web3Provider(ethereum);
     const signer = provider.getSigner();
-    const transactionContract=new ethers.Contract(contractAddress, contractABI, signer);
+    const transactionsContract=new ethers.Contract(contractAddress, contractABI, signer);
 
-   return transactionContract;
+   return transactionsContract;
 }
-export const TransactionProvider = ({children}) =>{
+export const TransactionsProvider = ({children}) =>{
 
     const [currentAccount, setCurrentAccount] = useState('');
-    const [formData, setFormData] = useState({addressTo: '', amount: '', keyword: '', message: ''});
+    const [formData, setformData] = useState({addressTo: '', amount: '', keyword: '', message: ''});
     const [isLoading, setIsLoading] = useState(false);
     const [transactionCount, setTransactionCount] = useState(localStorage.getItem('transactionCount'));
+    
 
     const handleChange = (e, name) => {
-        setFormData((prevState)=>({ ...prevState, [name]: e.target.value}));
+        setformData((prevState)=>({ ...prevState, [name]: e.target.value}));
     };
 
     const checkIfWalletIsConnected = async () =>{
@@ -58,10 +59,10 @@ export const TransactionProvider = ({children}) =>{
 
     const sendTransaction = async ()=>{
         try {
-            if(!ethereum) return alert("Please install metamask");
+            if(ethereum){
 
             const { addressTo, amount, keyword, message } = formData;
-            const transactionContract = getEtheruemContract();
+            const transactionsContract = getEtheruemContract();
             const parsedAmount = ethers.utils.parseEther(amount);
 
             await ethereum.request({ 
@@ -72,10 +73,10 @@ export const TransactionProvider = ({children}) =>{
                     gas: '0x5208',//21000 GWEI
                     value: parsedAmount._hex, //0.00001
 
-                }]
+                }],
             });
 
-            const transactionHash = await transactionContract.addToBlockchain(addressTo, parsedAmount, message, keyword);
+            const transactionHash = await transactionsContract.addToBlockchain(addressTo, parsedAmount, message, keyword);
 
             setIsLoading(true);
             console.log(`Loading - ${transactionHash.hash}`);
@@ -83,10 +84,11 @@ export const TransactionProvider = ({children}) =>{
             setIsLoading(false);
             console.log(`Success - ${transactionHash.hash}`);
             
-            const transactionCount = await transactionContract.getTransactionCount();
-            setTransactionCount(transactionCount.toNumber());
+            const transactionsCount = await transactionsContract.getTransactionCount();
+            setTransactionCount(transactionsCount.toNumber());
             
-        }catch (error) {
+        }
+    }catch (error) {
             console.log(error);
             throw new Error("no ethereum object")
             
@@ -98,7 +100,7 @@ export const TransactionProvider = ({children}) =>{
         checkIfWalletIsConnected();
     },[]);
     return(
-        <TransactionContext.Provider value={{ connectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction }}>
+        <TransactionContext.Provider value={{ connectWallet, currentAccount, formData, setformData, handleChange, sendTransaction }}>
         {children}
         </TransactionContext.Provider>
     );

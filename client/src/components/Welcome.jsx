@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AiFillPlayCircle } from "react-icons/ai";
+import { AiFillPlayCircle } from 'react-icons/ai';
 import { SiEthereum } from 'react-icons/si';
 import { BsInfoCircle } from 'react-icons/bs';
 import { TransactionContext } from '../context/TransactionContext';
@@ -19,7 +19,7 @@ const Input = ({placeholder, name, type, value, handleChange})=>(
 );
 
 const Welcome = () =>{
-const { connectWallet, currentAccount, formData, sendTransaction, handleChange  } = useContext(TransactionContext);
+const { connectWallet, currentAccount, formData, sendTransaction, handleChange, isLoading  } = useContext(TransactionContext);
 
     
     const handleSubmit = (e) => {
@@ -130,6 +130,6 @@ const { connectWallet, currentAccount, formData, sendTransaction, handleChange  
 
         </div>
     );
-}
+};
 
 export default Welcome;
