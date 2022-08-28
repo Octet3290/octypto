@@ -6,9 +6,9 @@
 }
 
 .logo {
-  height: 60em;
+  height: 700em;
   padding: 1.5em;
-  will-change: filter;
+  will-change:scroll-position;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);

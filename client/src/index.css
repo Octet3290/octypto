@@ -1,16 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Roboto:wght@300;400;700&family=Tai+Heritage+Pro:wght@400;700&display=swap");
 
-* html {
-  padding: 0;
+
+* {
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
+video{
+  width: 100%;
+  height: 100%;
+  
+  
+}
+.content {
+  position: relative;
+  width: 100%;
+ 
+  
+  
+}
+
+
 body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+
+
+}
+.overlay {
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  
+  /* background-color: #000000cc; */
 }
 
 .gradient-bg-welcome {
@@ -21,26 +52,10 @@ body {
     radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
 }
 
-.gradient-bg-services {
-  background-color:#0f0e13;
-  background-image: 
-    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
-}
 
-.gradient-bg-transactions {
-  background-color: #0f0e13;
-  background-image: 
-    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
-}
 
-.gradient-bg-footer {
-  background-color: #0f0e13;
-  background-image: 
-    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
-    radial-gradient(at 50% 150%, hsla(339,49%,30%,1) 0, transparent 50%);
-}
+
+
 
 .blue-glassmorphism {
   background: rgb(39, 51, 89, 0.4);
@@ -78,6 +93,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 @tailwind base;
 @tailwind components;

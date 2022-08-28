@@ -27,8 +27,8 @@ const Services = () =>{
 
                 <div className="flex-1 flex flex-col justify-start items-start">
 
-                    <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient">Services that we <br />
-                    continue to improve</h1>
+                    <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient">SERVICES THAT WE <br />
+                    CONTINUE TO IMPROVE</h1>
 
                 </div>
 
@@ -39,23 +39,23 @@ const Services = () =>{
 
                 <ServiceCard 
                     color="bg-[#2952E3]"
-                    title = "Security Guaranteed"
+                    title = "SECURITY GUARANTEED"
                         icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
                             subtitle="Security is guarnanteed. We always mantain privacy and mantaining the quality of our products"
                        
                     />
                     <ServiceCard 
                     color="bg-[#8945F8]"
-                    title = "Best Exchange Rates"
+                    title = "BEST EXCHANGES EVER"
                         icon={<BiSearchAlt fontSize={21} className="text-white" />}
                             subtitle="Security is guarnanteed. We always mantain privacy and mantaining the quality of our products"
                        
                     />
                     <ServiceCard 
                     color="bg-[#F84550]"
-                    title = "Fastest Transactions"
+                    title = "FASTEST TRANSACTIONS"
                         icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
-                            subtitle="Security is guarnanteed. We always mantain privacy and mantaining the quality of our products"
+                            subtitle="Security is guaranteed. We always mantain privacy and mantaining the quality of our products"
                        
                     />
                     
