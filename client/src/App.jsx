@@ -5,16 +5,25 @@ const App=()=>{
    
     
       <div className="content">
-      <Bitcoin />
-    
-      <div>
+      
+
+      <Bitcoin /> 
+      
+      
+      <div className="spoon">
+      <Bitcoin /> 
       <Navbar />
       <Welcome />
+     
       <Services />
       <Transactions />
       
       <Footer />
-</div>
+      
+      </div>
+      
+    
+    
       </div>
     
   );
