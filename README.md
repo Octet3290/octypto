@@ -1,4 +1,4 @@
-# Octypto 
+# Octypto Web 3.0 Blockchain App
 This project is the Web 3.0 Blockchain App using React JS, ethers, Smart contracts, solidity and Tailwind CSS.
 With a stunning design, connected to the blockchain, metamask pairing, interaction with smart contracts, sending Ethereum through the blockchain network and writing solidity codes
 
