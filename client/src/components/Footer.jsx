@@ -31,7 +31,7 @@ const Footer = () =>{
         </div>
         <div className='sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5'/>
         <div className='sm:w-[90%] w-full flex justify-between items-centermt-3'>
-        <p className='text-white text-sm text-center'>@kryptomastery 2022
+        <p className='text-white text-sm text-center'>@octypto 2022
 
         </p>
         <p className='text-white text-sm text-center'>All rights reserved
