@@ -6,21 +6,20 @@ With a stunning design, connected to the blockchain, metamask pairing, interacti
 # App In Action
 - Connecting Wallet
 
-<img src="https://github.com/Octet3290/octypto/blob/main/client/website%20ss/octypto%20connecting%20wallet.png" alt="drawing" width="500"/>    
+![Connecting Wallet](https://github.com/Octet3290/octypto/blob/main/client/website%20ss/octypto%20connecting%20wallet.png)   
 
 - Landing Page
 
-
-<img src="https://github.com/Octet3290/octypto/blob/main/client/website%20ss/landing%20page%20octypto.png" alt="drawing" width="500"/>      
+![Landing Page](https://github.com/Octet3290/octypto/blob/main/client/website%20ss/landing%20page%20octypto.png)   
 
 - Services part
 
-<img src="https://github.com/Octet3290/octypto/blob/main/client/website%20ss/Services%20octypyo.png" alt="drawing" width="500"/>   
+![Services](https://github.com/Octet3290/octypto/blob/main/client/website%20ss/Services%20octypyo.png)  
 
 - Latest Transactions part
 
-<img src="https://github.com/Octet3290/octypto/blob/main/client/website%20ss/Latest%20transactions%20octypto.png" alt="drawing" width="500"/>  
+![Latest Transactions](https://github.com/Octet3290/octypto/blob/main/client/website%20ss/Latest%20transactions%20octypto.png)
 
 - Footer part
 
-<img src="https://github.com/Octet3290/octypto/blob/main/client/website%20ss/footer%20octypyo%20.png" alt="drawing" width="500"/>   
+![Footer](https://github.com/Octet3290/octypto/blob/main/client/website%20ss/footer%20octypyo%20.png)
